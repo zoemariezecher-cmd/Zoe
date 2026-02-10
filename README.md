@@ -16,7 +16,7 @@ the player competes against a computer and i added the elements "lizard" and "sp
 - Standard library: 'random'
 - Logic and code adapted from online tutorials for learning purposes
 
-  ## How to Run
+## How to Run
   1. Install Python2x or use a web-based Python environment
   2. Download the file 'rpsls.py'
   3. open terminal or command prompt
