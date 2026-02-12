@@ -2,7 +2,7 @@
 
 ## Description
 Small project from school which serves as an extension to the traditional game "Rock-Paper-Scissors".
-the player competes against a computer and i added the elements "lizard" and "spock" from the Tv show "The Big Bang theory".
+The player competes against a computer and i added the elements "lizard" and "spock" from the Tv show "The Big Bang theory".
 
 ## Features
 - player against computer game
