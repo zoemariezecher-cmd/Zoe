@@ -1,0 +1,37 @@
+"""Zahlen sortieren"""
+
+#Gegebene Zahle
+zahlen = [5, 2, 9, 1, 7, 3]
+
+#Aufsteigend sortieren
+zahlen.sort()
+print("Aufsteigend sortiert:", zahlen)
+
+#Absteigend sortieren
+zahlen.sort(reverse = True)
+print("Absteigend sortiert:", zahlen)
+
+#Zahlen ohne sort() sortieren -> Bubble Sort
+#Neue gegebene Zahlen
+numbers = [4, 1, 6, 2]
+n = len(numbers)
+
+for number in range(n): # Äußere Schleife
+    for j in range(0, n-number-1): # Innere Schleife, j für bestimmte Listenposition
+        if numbers[j] < numbers[j +1]: #Absteigend, j+1 Element daneben 
+            numbers[j], numbers[j+1] = numbers[j+1], numbers[j]        
+print(numbers)
+
+
+""" Wörter sortieren """
+
+#Gegeben
+fruits = ["Banane", "Apfel", "Kiwi", "Mango"]
+
+# Alphabetisch sortiert
+fruits.sort()
+print(fruits)
+
+#nach Wortlänge
+sorted_fr = sorted(fruits, key=len)
+print(sorted_fr)
