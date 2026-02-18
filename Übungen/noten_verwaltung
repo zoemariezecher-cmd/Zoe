@@ -1,0 +1,58 @@
+###Notenverwaltung
+
+#Gegebene Infos
+noten = [2, 3, 1, 4, 1, 1, 6, ]
+
+# Durchschnitt berechnen
+
+if len(noten)== 0:
+    print("Keine Note");
+else:
+    summe = 0
+    for note in noten:
+        summe += note
+        
+    avg = float(summe / len(noten))
+    print("Durchschnitt Noten:", avg)
+ 
+
+    
+# Beste und schlechteste Noten
+print("Beste Note:", min(noten))
+print("Schlechteste Note", max(noten))
+
+# Bestandene schüler zählen
+bestanden= 0
+durchgefallen = 0
+
+for note in noten:
+    if note <= 4:
+        bestanden += 1;
+    else:
+        durchgefallen += 1;
+
+print("Bestanden:", bestanden)
+print("Durchgefallen", durchgefallen)
+
+
+# Funktion um aus Zahlen Text zu machen
+
+def name(note):
+    if note == 1:
+        return"Sehr Gut"
+    elif note == 2:
+       return"Gut"
+    elif note == 3:
+        return"Befriedigend"
+    elif note == 4:
+        return"Ausreichend"
+    elif note == 5:
+        return"Mangelhaft"
+    elif note == 6:
+        return"Ungenuegend"
+    else:
+        return"Error"
+    
+#Test
+
+print(name(int(input("Trage Note ein als Zahl (1-6)"))))
