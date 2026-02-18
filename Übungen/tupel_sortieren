@@ -1,0 +1,25 @@
+''' Tupel sortieren '''
+
+#Gegeben
+personen = [
+    ("Anna", 22),
+    ("Max", 19),
+    ("Lisa", 25),
+    ("Tom", 20)
+]
+
+# Nach alphabet sortieren
+'''' Alternativ, weil Python immer nach dem ersten Listenelement sortiert
+personen.sort() '''
+
+''''lambda als Funktion ohne Namen
+person[0] -> Erstes Element im Tupel, hier string
+person[1] -> zweites Element im Tupel hier int'''
+
+
+personen.sort(key = lambda person: person[0])
+print(personen)
+            
+# Nach Alter sortieren
+personen.sort(key =lambda person: person[1])
+print(personen)  
